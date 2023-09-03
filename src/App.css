@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style-type: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  /* font-family: 'Mulish', sans-serif; */
+  background-color: #F9FAFB;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+:root {
+  --dark: #1C1E23;
+  --grey-25: #FCFCFD;
+  --grey-50: #F9FAFB;
+  --grey-100: #F2F4F7;
+  --grey-200: #EAECF0;
+  --grey-300: #D0D5DD;
+  --grey-400: #98A2B3;
+  --grey-500: #667085;
+  --grey-600: #475467;
+  --grey-700: #344054;
+  --grey-800: #1D2939;
+  --grey-900: #101828;
+
+  --primary-25: #F7F5FD;
+  --primary-50: #EDE9FD;
+  --primary-100: #C6BBF8;
+  --primary-200: #AA9AF5;
+  --primary-300: #836CF0;
+  --primary-400: #6B4FED;
+  --primary-500: #4623E9;
+  --primary-600: #4020D4;
+  --primary-700: #3219A5;
+  --primary-800: #271380;
+  --primary-900: #1D0F62;
+
+  --error-25: #FFFBFA;
+  --error-50: #FEF3F2;
+  --error-100: #FEE4E2;
+  --error-200: #FECDCA;
+  --error-300: #FDA29B;
+  --error-400: #F97066;
+  --error-500: #F04438;
+  --error-600: #D92D20;
+  --error-700: #B42318;
+  --error-800: #912018;
+  --error-900: #7A271A;
+
+  --warning-25: #FFFCF5;
+  --warning-50: #FFFAEB;
+  --warning-100: #FEF0C7;
+  --warning-200: #FEDF89;
+  --warning-300: #FEC84B;
+  --warning-400: #FDB022;
+  --warning-500: #F79009;
+  --warning-600: #DC6803;
+  --warning-700: #B54708;
+  --warning-800: #93370D;
+  --warning-900: #7A2E0E;
+
+  --success-25: #F6FEF9;
+  --success-50: #ECFDF3;
+  --success-100: #D1FADF;
+  --success-200: #A6F4C5;
+  --success-300: #6CE9A6;
+  --success-400: #32D583;
+  --success-500: #12B76A;
+  --success-600: #039855;
+  --success-700: #027A48;
+  --success-800: #05603A;
+  --success-900: #054F31;
+}
+
+.app {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-content {
+  width: calc(100vw - 280px);
+  padding: 20px;
 }
